@@ -1,0 +1,292 @@
+body {
+    background-color: rgba(250, 249, 248, 1);
+    box-sizing: border-box;
+    margin: auto;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/*=======================
+    Todas las imagenes
+========================*/
+img {
+    width: 100%;
+}
+
+/*========================
+        NAVBAR
+=========================*/
+.bg-navbar {
+    /* background-color:  rgba(62, 109, 195, 1);; */
+    background-color: rgba(250, 249, 248, 1);
+}
+.navbar-brand{
+    background-color:  rgba(127, 127, 127, 0.8);;
+    border-radius: 5px;
+    padding: 0.5em;
+}
+.nav-link {
+    /* color: rgba(255, 255, 255, 1); */
+    color: rgba(62, 109, 195, 1);
+    font-weight: bolder;
+    border-bottom: solid 2px rgba(62, 109, 195, 1);
+}
+
+a:link {
+    text-decoration: none;
+}
+
+.navbar-toggler-icon {
+    background-color: red;
+}
+
+.fa-bars {
+    color: rgba(255, 255, 255, 1);
+}
+
+/*=============================
+        SECTION HOME
+=============================*/
+.container-home {
+    background-color: rgba(250, 249, 248, 1);
+    /* background-color:   rgba(62, 109, 195, 1); */
+    padding: 3em 2em;
+    /* margin-top: 4%; */
+}
+
+.div-center {
+    text-align: center;
+    color: rgba(127, 127, 127, 1);
+    padding: 0.5%;
+}
+
+.home-title {
+    font-size: 3em;
+    font-weight: bolder;
+}
+
+.home-description {
+    font-size: 1.2em;
+}
+
+.btn-demo {
+    background-color: rgba(232, 65, 149, 1) !important;
+    border-radius: 30px !important;
+    color: rgba(255, 255, 255, 1) !important;
+    padding: 0.5em 1.5em !important;
+}
+
+.btn-demo:hover,
+.btn-demo:focus,
+.btn-demo:active,
+.btn-demo.active,
+.open .dropdown-toggle.btn-demo {
+    background-color: rgba(219, 63, 141, 1) !important;
+
+}
+
+.img-home {
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+}
+
+.solicitar-demo-home {
+    font-weight: bold;
+}
+
+/*==================================
+        SECTION CARACTERISTICAS
+===================================*/
+.container-carac {
+    background-color: rgba(62, 109, 195, 1);
+}
+
+.cara-desc {
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: bolder;
+    color: rgba(255, 255, 255, 1);
+    padding-top: 1em;
+}
+
+.sub-carac {
+    display: flex;
+    column-gap: 1em;
+    row-gap: 1em;
+    padding: 3em;
+    justify-content: center;
+    text-align: center;
+}
+
+.box-carac {
+    background-color: rgba(255, 255, 255, 1);
+    padding: 2em;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 1);
+}
+
+p i {
+    font-size: 3em;
+    color: rgba(255, 158, 33, 1);
+        /* color:rgba(82, 198, 145,1) */
+}
+
+/*==============================
+        SECTION CONTACTO
+===============================*/
+ul,li{
+    list-style: none;
+}
+
+.container-contacto{
+    background-color: rgba(0, 0, 0, 1);
+    color:rgba(255, 255, 255, 0.8);
+    padding: 1em;
+    box-sizing: border-box;
+}
+.redes-sociales{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 0 3em;
+    box-sizing: border-box;
+}
+
+.container-contact-inf{
+    padding-left: 2%;
+}
+
+.li-title{
+    font-weight: bolder;
+}
+
+.fa-facebook,
+.fa-youtube,
+.fa-chrome{
+    font-size: 2.5em;
+    /* border:solid blue; */
+}
+
+.fa-facebook:hover{
+    color: rgba(62, 109, 195, 1);
+    cursor: pointer;
+}
+.fa-youtube:hover{
+    color: rgba(239, 55, 10, 1);
+    cursor: pointer;
+}
+.fa-chrome:hover{
+    color: rgba(230, 243, 23, 1);
+    cursor: pointer;
+}
+/*==============================
+        MEDIA QUERIES
+===============================*/
+/* @media (min-width: 1200px) { 
+
+    .navbar li {
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+    .home-title{
+        font-size: 3.5em;
+    }
+    .home-description{
+        font-size:1.5em;
+    }
+ } */
+
+
+@media (min-width: 992px) {
+    .navbar li {
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+
+    .home-title {
+        font-size: 3.5em;
+    }
+
+    .home-description {
+        font-size: 1.5em;
+    }
+
+    .btn-demo {
+        padding: 0.8em 2em !important;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .home-title {
+        font-size: 2.3em;
+    }
+
+    .home-description {
+        font-size: 1.1em;
+    }
+
+    .btn-demo {
+        padding: 0.8em 2em !important;
+    }
+    .cara-desc {
+        font-size: 2.5em;
+    }
+    .comodin-box{
+        display: none;
+    }
+    .container-contact-inf{
+        padding-left: 3%;
+    }
+    .box-footer{
+        margin-top:1.7em;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .home-title {
+        font-size: 2.3em;
+    }
+
+    .home-description {
+        font-size: 1em;
+    }
+    .cara-desc {
+        font-size: 2em;
+    }
+    .comodin-box{
+        display: none;
+    }
+    .container-contact-inf{
+        padding-left: 4%;
+    }
+    .box-footer{
+        margin-top:1.5em;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .home-title {
+        font-size: 2em;
+    }
+
+    .home-description {
+        font-size: 1em;
+    }
+
+    .cara-desc {
+        font-size: 1.6em;
+    }
+    .comodin-box{
+        display: none;
+    }
+    .container-contact-inf{
+        padding-left: 4%;
+    }
+    .box-footer{
+        margin-top:1em;
+    }
+}
