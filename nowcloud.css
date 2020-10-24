@@ -31,7 +31,7 @@ img {
 =========================*/
 .bg-navbar {
     /* background-color: rgba(255, 255, 255, 1); */
-    background-color: rgba(36, 36, 68,1);
+    background-color: rgba(36, 36, 68, 1);
     box-sizing: border-box;
 
 }
@@ -44,31 +44,31 @@ img {
 
 .nav-link {
     /* color: rgba(20, 30, 58, 1); */
-    color:rgba(255,255,255,1);
+    color: rgba(255, 255, 255, 1);
     font-weight: 300;
     font-size: 0.9em;
 }
 
-.nav-link:hover{
-    color:rgba(236, 84, 108,1);
+.nav-link:hover {
+    color: rgba(236, 84, 108, 1);
 }
 
 .now {
-    color:rgba(236, 84, 108,1);
+    color: rgba(236, 84, 108, 1);
     font-weight: bolder;
 }
 
-.now:hover{
-    color:rgba(220, 53, 69,1);
+.now:hover {
+    color: rgba(220, 53, 69, 1);
 }
 
 .navbar-toggler-icon {
-    background-color: rgba(255,255,255,1);
+    background-color: rgba(255, 255, 255, 1);
 }
 
 .fa-bars {
     /* color: rgba(255, 0, 60, 1); */
-    color:rgba(236, 84, 108,1)
+    color: rgba(236, 84, 108, 1)
 }
 
 /*=============================
@@ -76,16 +76,18 @@ img {
 =============================*/
 .container-home {
     /* background-color: rgba(196, 236, 252, 1); */
-    background-color: rgba(36, 36, 68,1);
+    background-color: rgba(36, 36, 68, 1);
     padding-top: 7%;
     overflow: hidden;
 
 }
 
+
+
 .div-center {
     text-align: center;
     /* color: rgba(52, 58, 64, 1); */
-    color: rgba(255,255,255,1);
+    color: rgba(255, 255, 255, 1);
     padding: 0.5%;
 }
 
@@ -101,13 +103,13 @@ img {
 }
 
 .home-description {
-    font-size: 0.7em;
+    font-size: 1em !important;
     font-weight: 300;
 }
 
 .btn-demo {
     /* background-color: rgba(37, 119, 253, 1) !important; */
-    background-color:rgba(236, 84, 108,1) !important;
+    background-color: rgba(236, 84, 108, 1) !important;
     border-radius: 30px !important;
     color: rgba(255, 255, 255, 1) !important;
     padding: 0.5em 1.5em !important;
@@ -117,7 +119,7 @@ img {
 
 .btn-demo:hover {
     transform: scale(1.1);
-    background-color: rgba(220, 53, 69,1) !important;
+    background-color: rgba(220, 53, 69, 1) !important;
 }
 
 .img-home {
@@ -144,9 +146,10 @@ img {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 6% 0;
+    margin-top: -2%;
+    margin-bottom: 6%;
     text-align: center;
-    
+
 }
 
 .planes-title {
@@ -185,14 +188,25 @@ img {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: rgba(252, 240, 206, 1);
+    background-color: rgba(236, 84, 108, 0.5);
     align-items: center;
-    margin: 5%;
+    margin: 0 5%;
+    padding:1% 0 ;
     text-align: center;
-    padding: 1em;
+    position: relative;
+    overflow: hidden;
 }
 
-.container-promo div {
+.promo-banner{
+    position: absolute;
+    top:-10%;
+    z-index: -10;
+    opacity: 0.5;
+}
+
+.promo-contac,
+.promo-description,
+.promo-title {
     padding: 0.5%;
 }
 
@@ -202,8 +216,10 @@ img {
 }
 
 .btn-promo {
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(37, 119, 253, 1);
     padding: 8% !important;
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 1);
+    /* box-shadow: 1px 1px 3px rgba(0, 0, 0, 1); */
     font-weight: bolder !important;
     transition: all 0.3s ease-in-out 0s !important;
 }
@@ -308,7 +324,7 @@ p i {
 
 .title-ex {
     /* color: rgba(232, 62, 140, 1); */
-    color:rgba(255, 0, 60,1);
+    color: rgba(255, 0, 60, 1);
     font-size: 2.5em;
     font-weight: bold;
     padding: 2%;
@@ -332,7 +348,7 @@ p i {
 
 .content-ex:hover {
     /* color: #fff; */
-    background-color: rgba(255, 0, 60,0.5);
+    background-color: rgba(255, 0, 60, 0.5);
     /* background-color: rgba(232, 62, 140, 0.5); */
     transform: scale(1.05);
 }
@@ -409,10 +425,10 @@ p i {
     background-color: rgba(245, 169, 44, 1);
     margin: 5% 0 !important;
     border-radius: 2px;
-    transition:  all 1s ease 0s;
+    transition: all 1s ease 0s;
 }
 
-.content-prod a:hover{
+.content-prod a:hover {
     transform: scale(1.1);
 }
 
@@ -750,7 +766,9 @@ p i {
     .box-footer {
         margin-top: 1.5em;
     }
-    .parallax,.parallaxCarac{
+
+    .parallax,
+    .parallaxCarac {
         display: none;
     }
 }
@@ -779,6 +797,10 @@ p i {
 
     .home-title {
         font-size: 2em;
+    }
+
+    .home-description {
+        font-size: 0.9em !important;
     }
 
     .div-center {
@@ -868,7 +890,8 @@ p i {
         margin-top: 1em;
     }
 
-    .parallax,.parallaxCarac{
+    .parallax,
+    .parallaxCarac {
         display: none;
     }
 
