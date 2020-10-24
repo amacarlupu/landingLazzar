@@ -5,7 +5,7 @@ cargarEventListeners();
 
 function cargarEventListeners() {
     // Se dispara cuando se hace click en añadir cursos
-    barraMenu.addEventListener('scroll', calcularPixeles);
+    document.addEventListener('scroll', calcularPixeles);
 }
 
 function calcularPixeles(e){
@@ -13,9 +13,11 @@ function calcularPixeles(e){
 
     console.log(e,'hola');
     if(window.scrollY>0){
-        barraMenu.style.opacity="0.8";
+        barraMenu.style.boxShadow="2px 2px 6px rgba(0,0,0,1)";
     }else{
         barraMenu.style.opacity="1";
+        barraMenu.style.boxShadow="0px 0px 0px";
+
     }
 }
 
