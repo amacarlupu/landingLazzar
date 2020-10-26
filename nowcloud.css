@@ -82,8 +82,6 @@ img {
 
 }
 
-
-
 .div-center {
     text-align: center;
     /* color: rgba(52, 58, 64, 1); */
@@ -191,15 +189,15 @@ img {
     background-color: rgba(236, 84, 108, 0.5);
     align-items: center;
     margin: 0 5%;
-    padding:1% 0 ;
+    padding: 1% 0;
     text-align: center;
     position: relative;
     overflow: hidden;
 }
 
-.promo-banner{
+.promo-banner {
     position: absolute;
-    top:-10%;
+    top: -10%;
     z-index: -10;
     opacity: 0.5;
 }
@@ -233,14 +231,17 @@ img {
         SECTION MÓDULOS
 ===============================*/
 .container-modulos {
-    background-color: rgba(196, 236, 252, 1);
+    /* background-color: rgba(196, 236, 252, 1); */
+    background-color: rgba(36, 36, 68, 1);
+
 }
 
 .modulos-desc {
     text-align: center;
     font-size: 2.5em;
     font-weight: bolder;
-    color: rgba(52, 58, 64, 1);
+    /* color: rgba(52, 58, 64, 1); */
+    color: rgba(255, 255, 255, 1);
     padding-top: 1em;
 }
 
@@ -357,8 +358,9 @@ p i {
         SECTION ARQUITECTURA NOW
 ======================================*/
 .container-arq {
-    /* background-color:  rgba(52, 58, 64, 0.8); */
-    background-color: rgba(196, 236, 252, 0.4);
+    background-color: rgba(235, 240, 246, 0.8);
+    /* background-color: rgba(196, 236, 252, 0.4); */
+
 
     display: flex;
     justify-content: center;
@@ -380,10 +382,10 @@ p i {
 
 .parallax {
     position: absolute;
-    top: -80%;
+    top: -90%;
     left: 0;
     object-fit: cover;
-    opacity: 0.4;
+    opacity: 0.6;
     z-index: -10;
 }
 
@@ -441,9 +443,7 @@ p i {
         SECTION CARACTERISTICAS
 ===================================*/
 .container-carac {
-    background-color: rgba(62, 109, 195, 0.6);
-    /* background-color: rgb(252, 100, 136,0.5); */
-    /* background-color: rgba(126, 232, 120,0.7); */
+    background-color: rgba(255, 79, 91, 1);
     position: relative;
     overflow: hidden;
 }
@@ -453,7 +453,7 @@ p i {
     bottom: 180%;
     left: 0;
     object-fit: cover;
-    opacity: 0.7;
+    opacity: 1;
     z-index: -10;
 
 }
@@ -484,23 +484,48 @@ p i {
 
 .box-carac p i {
     font-size: 3em;
-    color: rgba(223, 156, 110, 1);
+    color: rgba(40, 48, 157, 1);
 }
 
 /*====================================
         SECTION OPINION CLIENTES
 =====================================*/
+.container-clientes{
+    margin:7% 0;
+    position: relative;
+}
+
 .swiper-container {
-    width: 300px;
-    height: 300px;
-    padding: 50px;
+    width: 100%;
+    height: 100%;
 }
 
 .swiper-slide {
-    background-position: center;
-    background-size: cover;
-    width: 300px;
-    height: 300px;
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    padding: 2em;
+
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+
+
+.clientes-desc{
+    border:solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 /*==============================
@@ -509,7 +534,8 @@ p i {
 
 
 .container-contacto {
-    background-color: rgba(0, 0, 0, 1);
+    /* background-color: rgba(0, 0, 0, 1); */
+    background-color: rgba(36, 36, 68, 1);
     color: rgba(255, 255, 255, 0.8);
     padding: 1em;
     box-sizing: border-box;
@@ -610,6 +636,11 @@ p i {
         padding: 2% 3%;
     }
 
+    .nav-link {
+        color: rgba(20, 30, 58, 1);
+        font-weight: 600;
+    }
+
     .home-title {
         font-size: 2em;
     }
@@ -695,6 +726,11 @@ p i {
     #navbarNav {
         background-color: rgba(255, 255, 255, 1);
         padding: 3% 4%;
+    }
+
+    .nav-link {
+        color: rgba(20, 30, 58, 1);
+        font-weight: 600;
     }
 
     .home-title {
@@ -793,6 +829,11 @@ p i {
     #navbarNav {
         background-color: rgba(255, 255, 255, 1);
         padding: 1em;
+    }
+
+    .nav-link {
+        color: rgba(20, 30, 58, 1);
+        font-weight: 600;
     }
 
     .home-title {

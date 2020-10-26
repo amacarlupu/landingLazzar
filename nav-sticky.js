@@ -11,7 +11,7 @@ function cargarEventListeners() {
 function calcularPixeles(e){
     e.preventDefault();
 
-    console.log(e,'hola');
+
     if(window.scrollY>0){
         barraMenu.style.boxShadow="2px 2px 6px rgba(0,0,0,1)";
     }else{
