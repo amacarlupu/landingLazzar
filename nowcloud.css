@@ -53,6 +53,12 @@ img {
     color: rgba(236, 84, 108, 1);
 }
 
+.dropdown-item {
+    color: rgba(20, 30, 58, 1);
+    font-size: 0.9em;
+    font-weight: 600;
+}
+
 .now {
     color: rgba(236, 84, 108, 1);
     font-weight: bolder;
@@ -197,9 +203,12 @@ img {
 
 .promo-banner {
     position: absolute;
-    top: -10%;
+    top: 0%;
+    width: 170%;
+    object-fit: cover;
     z-index: -10;
     opacity: 0.5;
+
 }
 
 .promo-contac,
@@ -243,6 +252,10 @@ img {
     /* color: rgba(52, 58, 64, 1); */
     color: rgba(255, 255, 255, 1);
     padding-top: 1em;
+}
+
+.swiper-modulo-mobile {
+    display: none;
 }
 
 .sub-modulos {
@@ -362,10 +375,8 @@ p i {
         SECTION ARQUITECTURA NOW
 ======================================*/
 .container-arq {
-    background-color: rgba(235, 240, 246, 0.8);
+    background-color: rgba(235, 240, 246, 1);
     /* background-color: rgba(196, 236, 252, 0.4); */
-
-
     display: flex;
     justify-content: center;
     margin: 5% 0;
@@ -447,27 +458,16 @@ p i {
         SECTION CARACTERISTICAS
 ===================================*/
 .container-carac {
-    /* background-color: rgba(255, 79, 91, 1); */
     background-color: rgba(235, 240, 246, 1);
     position: relative;
     overflow: hidden;
 }
 
-.parallaxCarac {
-    position: absolute;
-    bottom: 180%;
-    left: 0;
-    object-fit: cover;
-    opacity: 1;
-    z-index: -10;
-
-}
 
 .cara-desc {
     text-align: center;
     font-size: 2.5em;
     font-weight: bolder;
-    /* color: rgba(255, 255, 255, 1); */
     padding-top: 1em;
 }
 
@@ -490,8 +490,15 @@ p i {
 .box-carac p i {
     font-size: 3em;
     /* color: rgba(40, 48, 157, 1); */
-    color:rgba(236, 84, 108, 1);
+    color: rgba(236, 84, 108, 1);
 }
+
+.swiper-cloud-mobile,
+.swiper-premium-mobile,
+.swiper-full-mobile{
+    display: none;
+}
+
 
 
 
@@ -525,9 +532,7 @@ p i {
 .swiper-slide {
     text-align: center;
     font-size: 18px;
-    /* background: #fff; */
     padding: 2em;
-
     display: flex;
     flex-direction: column;
     -webkit-box-pack: center;
@@ -567,12 +572,11 @@ p i {
         SECTION CONTACTO
 ===============================*/
 
-
 .container-contacto {
     /* background-color: rgba(0, 0, 0, 1); */
     background-color: rgba(36, 36, 68, 1);
     color: rgba(255, 255, 255, 0.8);
-    padding: 1em;
+    padding: 4% 4% 1% 4%;
     box-sizing: border-box;
 }
 
@@ -594,22 +598,23 @@ p i {
 
 .fa-facebook,
 .fa-youtube,
-.fa-chrome {
+.fa-globe-americas {
+    color: rgba(255, 255, 255, 0.8);
     font-size: 2.5em;
 }
 
 .fa-facebook:hover {
-    color: rgba(62, 109, 195, 1);
+    color: rgba(59, 89, 152, 1);
     cursor: pointer;
 }
 
 .fa-youtube:hover {
-    color: rgba(239, 55, 10, 1);
+    color: rgba(196, 48, 43, 1);
     cursor: pointer;
 }
 
-.fa-chrome:hover {
-    color: rgba(230, 243, 23, 1);
+.fa-globe-americas:hover {
+    color: rgba(43, 196, 138, 1);
     cursor: pointer;
 }
 
@@ -920,6 +925,21 @@ p i {
         font-size: 1.6em;
     }
 
+    .swiper-modulo-desktop {
+        display: none;
+    }
+
+    .swiper-modulo-mobile {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 5% !important;
+        color: rgba(255, 255, 255, 1);
+    }
+
+    .swiper-modulo {
+        margin: 0%;
+    }
+
     .row-efac {
         margin: 1em !important;
     }
@@ -954,6 +974,31 @@ p i {
         padding: 1em 1em 0 1em;
     }
 
+    .sub-carac {
+        display: none;
+    }
+
+    .swiper-premium-mobile,
+    .swiper-full-mobile,
+    .swiper-cloud-mobile  {
+        display: flex;
+        justify-content: center;
+    }
+
+    .swiper-premium,
+    .swiper-full{
+        background-color: rgba(255, 255, 255, 1);
+        margin-top: 4%;
+    }
+
+    .swiper-cloud {
+        background-color: rgba(255, 255, 255, 1);
+        /* padding-bottom:3%; */
+    }
+    .swiper-carac i {
+        color: rgba(236, 84, 108, 1);
+    }
+
     .comodin-box {
         display: none;
     }
@@ -970,5 +1015,14 @@ p i {
     .parallaxCarac {
         display: none;
     }
+
+    .row-clientes {
+        margin: 0%;
+    }
+    .container-contact-inf{
+        margin:2% 5%;
+        padding:0;
+    }
+
 
 }
