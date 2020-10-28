@@ -14,6 +14,7 @@ var swiper = new Swiper('.swiper-cliente', {
 
 
   var swiperPremium = new Swiper('.swiper-premium-mobile', {
+    effect:'coverflow',
     speed:400,
     loop:true,
     autoplay: {
@@ -30,6 +31,7 @@ var swiper = new Swiper('.swiper-cliente', {
   });
 
   var swiperFull = new Swiper('.swiper-full-mobile', {
+    effect:'coverflow',
     speed:400,
     loop:true,
     autoplay: {

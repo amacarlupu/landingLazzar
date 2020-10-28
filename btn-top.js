@@ -14,9 +14,6 @@ function iniciarEvento() {
 
 function contar(e) {
 
-    console.log(e);
-    // distancia = window.scrollY;
-    console.log("botom-back", distancia);
     if (window.scrollY < 210) {
         btnRetorna.style.display = "none";
     } else {
@@ -27,7 +24,6 @@ function contar(e) {
 
 function regresar(e) {
 
-    console.log(e);
     if (document.body.scrollTop != 0 || document.documentElement.scrollTop != 0) {
         window.scrollBy(0, -50);
         timeOut = setTimeout(function () {
