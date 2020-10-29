@@ -9,10 +9,10 @@
   <meta name="keywords" content="ERP Software Solutions, Enterprise resource plannning">
   <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   <script src="https://kit.fontawesome.com/fa47aaf5dc.js" crossorigin="anonymous"></script>
   <link href="nowcloud.css" rel="stylesheet" type="text/css">
   <script src="https://cdn.jsdelivr.net/npm/joshjs@1.0.0/dist/josh.min.js" crossorigin="anonymous"></script>
@@ -36,23 +36,23 @@
       <ul class="navbar-nav">
 
         <li class="nav-item">
-          <a class="nav-link" href="#">Planes</a>
+          <a class="nav-link" href="#section-planes">Planes</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Módulos</a>
+          <a class="nav-link" href="#section-modulos">Módulos</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Facturación Electrónica</a>
+          <a class="nav-link" href="#section-facturacion">Facturación Electrónica</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link now" href="#">Exclusivo NOW</a>
+          <a class="nav-link now" href="#section-now">Exclusivo NOW</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Líneas</a>
+          <a class="nav-link" href="#section-lineas">Líneas</a>
         </li>
-        <!-- <li class="nav-item">
-          <a class="nav-link" href="#">Características</a>
-        </li> -->
+        <li class="nav-item">
+          <a class="nav-link" href="#section-contacto">Contáctenos</a>
+        </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
             aria-haspopup="true" aria-expanded="false" href="#">Más</a>
@@ -117,7 +117,7 @@
 
   <!-- SECTION PLANES -->
 
-  <div class="container-fluid container-planes">
+  <div class="container-fluid container-planes" id="section-planes">
 
     <div class="container-planes-sup mb-4">
       <div class="planes-title">
@@ -243,7 +243,7 @@
 
 
   <!-- SECTION MÓDULOS -->
-  <div class="container-fluid container-modulos mt-5 mb-5">
+  <div class="container-fluid container-modulos mt-5 mb-5" id="section-modulos">
     <div class="modulos-desc">
       <div class="modulos-title">Conoce nuestros Módulos disponibles</div>
     </div>
@@ -332,7 +332,9 @@
       </div>
       <!-- Add Arrows -->
       <div class="swiper-button-next"></div>
+      <i class="fas fa-angle-right"></i>
       <div class="swiper-button-prev"></div>
+      <i class="fas fa-angle-left"></i>
     </div>
     <!-- FIN MOBILE VERSION -->
 
@@ -342,7 +344,7 @@
 
   <!-- SECTION FACTURACION ELECTRONICA -->
 
-  <div class="container-fluid container-efac">
+  <div class="container-fluid container-efac" id="section-facturacion">
     <div class="row row-efac" data-josh-anim-name="fadeInUp" data-josh-duration="1000ms" data-josh-anim-delay="3s">
 
       <div class="content-logo col-xl-6 col-lg-6 col-md-12 col-sm-12">
@@ -377,7 +379,7 @@
 
   <!-- INICIO SECTION EXCLUSIVO NOW -->
 
-  <div class="container-fluid container-ex">
+  <div class="container-fluid container-ex" id="section-now">
     <div class="title-ex">
       Exclusivo NOW
     </div>
@@ -450,7 +452,7 @@
 
 
   <!-- INICIO SECTION RUBROS Y LÍNEAS DE NEGOCIO -->
-  <div class="container-fluid container-linea">
+  <div class="container-fluid container-linea" id="section-lineas">
 
     <div class="title-linea">
       Rubros y líneas de negocio
@@ -548,7 +550,7 @@
   <!-- SECTION CARACTERISTICAS -->
   <div class="container-fluid container-carac">
 
-    <div class="cara-desc">
+    <div class="cara-desc" id="section-premium">
       <div class="cara-title">ERP NOW Desktop Premium CARACTERÍSTICAS</div>
     </div>
     <div class="row sub-carac">
@@ -641,15 +643,17 @@
       </div>
       <!-- Add Arrows -->
       <div class="swiper-button-next"></div>
+      <i class="fas fa-angle-right"></i>
       <div class="swiper-button-prev"></div>
+      <i class="fas fa-angle-left"></i>
       <!-- Add Pagination -->
-      <div class="swiper-pagination"></div>
+      <!-- <div class="swiper-pagination"></div> -->
 
     </div>
     <!-- FIN MOBILE VERSION -->
 
 
-    <div class="cara-desc">
+    <div class="cara-desc" id="section-full">
       <div class="cara-title">ERP NOW Desktop Full CARACTERÍSTICAS</div>
     </div>
     <div class="row sub-carac">
@@ -726,14 +730,16 @@
       </div>
       <!-- Add Arrows -->
       <div class="swiper-button-next"></div>
+      <i class="fas fa-angle-right"></i>
       <div class="swiper-button-prev"></div>
+      <i class="fas fa-angle-left"></i>
       <!-- Add Pagination -->
-      <div class="swiper-pagination"></div>
+      <!-- <div class="swiper-pagination"></div> -->
 
     </div>
     <!-- FIN MOBILE VERSION -->
 
-    <div class="cara-desc">
+    <div class="cara-desc" id="section-cloud">
       <div class="cara-title">ERP NOW CLOUD CARACTERÍSTICAS</div>
     </div>
     <div class="row sub-carac">
@@ -810,9 +816,11 @@
       </div>
       <!-- Add Arrows -->
       <div class="swiper-button-next"></div>
+      <i class="fas fa-angle-right"></i>
       <div class="swiper-button-prev"></div>
+      <i class="fas fa-angle-left"></i>
       <!-- Add Pagination -->
-      <div class="swiper-pagination"></div>
+      <!-- <div class="swiper-pagination"></div> -->
 
     </div>
     <!-- FIN MOBILE VERSION -->
@@ -905,7 +913,13 @@
 
         </div>
         <!-- Add Pagination -->
-        <div class="swiper-pagination"></div>
+        <div class="swiper-pagination prueba"></div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <i class="fas fa-angle-right"></i>
+        <div class="swiper-button-prev"></div>
+        <i class="fas fa-angle-left"></i>
+
 
       </div>
 
@@ -920,7 +934,7 @@
   </div>
 
 
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js" crossorigin="anonymous"></script>
 
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
     integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
@@ -941,7 +955,7 @@
 
 
 <!-- SECTION CONTACTO -->
-<footer class="container-fluid container-contacto">
+<footer class="container-fluid container-contacto" id="section-contacto">
 
   <div class="container-contact-sup row">
     <div class="box-contact col-xl-3 col-lg-3 col-md-6 col-sm-12">

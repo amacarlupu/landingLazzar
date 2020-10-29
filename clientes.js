@@ -1,4 +1,4 @@
-var swiper = new Swiper('.swiper-cliente', {
+const swiper = new Swiper('.swiper-cliente', {
     // effect: 'flip',
     // grabCursor: true,
     speed:400,
@@ -10,6 +10,10 @@ var swiper = new Swiper('.swiper-cliente', {
     pagination: {
       el: '.swiper-pagination',
     },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
   });
 
 
@@ -20,9 +24,6 @@ var swiper = new Swiper('.swiper-cliente', {
     autoplay: {
       delay: 5000,
       disableOnInteraction: false,
-    },
-    pagination: {
-      el: '.swiper-pagination',
     },
     navigation: {
       nextEl: '.swiper-button-next',
@@ -38,9 +39,6 @@ var swiper = new Swiper('.swiper-cliente', {
       delay: 5000,
       disableOnInteraction: false,
     },
-    pagination: {
-      el: '.swiper-pagination',
-    },
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
@@ -54,9 +52,6 @@ var swiper = new Swiper('.swiper-cliente', {
     autoplay: {
       delay: 5000,
       disableOnInteraction: false,
-    },
-    pagination: {
-      el: '.swiper-pagination',
     },
     navigation: {
       nextEl: '.swiper-button-next',
