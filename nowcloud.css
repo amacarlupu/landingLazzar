@@ -238,6 +238,10 @@ img {
     padding: 0.2em;
 }
 
+.plan-sub{
+    font-weight: bolder;
+}
+
 .container-planes-inf {
     display: flex;
     justify-content: center;
@@ -259,7 +263,9 @@ img {
     color: rgba(107, 193, 80, 1);
 }
 
-
+.img-plan{
+    width: 40% !important;
+}
 
 /*=============================
         SECTION PROMO
@@ -367,6 +373,10 @@ p i {
 /*============================================
         SECTION FACTURACIÓN ELECTRÓNICA
 =============================================*/
+.container-efac{
+    margin-bottom: -5% !important;
+}
+
 .content-logo,
 .content-desc {
     padding: 4% !important;
@@ -490,7 +500,7 @@ p i {
 =========================================*/
 
 .container-linea {
-    padding: 0 0 5% 0 !important;
+    padding-bottom: 5%  !important;
 }
 
 .title-linea {
@@ -540,7 +550,7 @@ p i {
 .container-carac {
     background-color: rgba(235, 240, 246, 1);
     position: relative;
-    overflow: hidden;
+    padding-top: 2em !important;
 }
 
 
@@ -608,11 +618,6 @@ p i {
 .row-clientes {
     margin: 0 10%;
 }
-
-.swiper-cliente {
-    /* border:solid red; */
-}
-
 
 .swiper-slide {
     text-align: center;
@@ -812,9 +817,14 @@ p i {
         margin: 3em !important;
     }
 
+    .content-logo{
+        padding: 2em 7em !important;
+    }
+
     .row-linea {
         margin: 0 1% !important;
     }
+
 
     .comodin-box {
         display: none;
@@ -910,6 +920,10 @@ p i {
 
     .col-ex {
         margin: 2% 0;
+    }
+
+    .content-logo{
+        padding: 2em !important;
     }
 
     .row-linea {
@@ -1052,7 +1066,9 @@ p i {
         font-size: 1em;
         padding: 0.5em;
     }
-
+    .container-ex, .container-linea{
+        margin-top: 4em !important;
+    }
     .row-linea {
         display: grid !important;
         grid-template-columns: repeat(2, 1fr) !important;
