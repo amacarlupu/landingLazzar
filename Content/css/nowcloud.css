@@ -38,40 +38,46 @@ img {
     opacity: 0;
 }
 
-.fa-angle-left{
-    color: rgba(0, 123, 255,1);
+.fa-angle-left {
+    color: rgba(0, 123, 255, 1);
     position: absolute;
-    top:40%;
-    left:3%;
+    top: 40%;
+    left: 3%;
     font-size: 2em;
     z-index: 1;
 }
 
-.fa-angle-right{
-    color: rgba(0, 123, 255,1);
+.fa-angle-right {
+    color: rgba(0, 123, 255, 1);
     position: absolute;
-    top:40%;
-    right:3%;
+    top: 40%;
+    right: 3%;
     font-size: 2em;
     z-index: 1;
 }
 
-.swiper-cliente .fa-angle-left{
-    color: rgba(0, 123, 255,1);
+.swiper-cliente .fa-angle-left {
+    color: rgba(0, 123, 255, 1);
     position: absolute;
-    top:50%;
-    left:1%;
+    top: 50%;
+    left: 1%;
     font-size: 2em;
     z-index: 1;
 }
 
-.swiper-cliente .fa-angle-right{
-    color: rgba(0, 123, 255,1);
+.swiper-cliente .fa-angle-right {
+    color: rgba(0, 123, 255, 1);
     position: absolute;
-    top:50%;
-    right:1%;
+    top: 50%;
+    right: 1%;
     font-size: 2em;
     z-index: 1;
+}
+
+.swiper-linea-mobile .fa-angle-left,
+.swiper-linea-mobile .fa-angle-right {
+    color: rgba(20, 30, 58, 1);
+    ;
 }
 
 /*==========================
@@ -83,7 +89,6 @@ img {
     bottom: 1em;
     z-index: 10;
     transition: all 0.3s ease-in-out 0s !important;
-
 }
 
 .btn-top:hover {
@@ -100,7 +105,6 @@ img {
         NAVBAR
 =========================*/
 .bg-navbar {
-    /* background-color: rgba(255, 255, 255, 1); */
     background-color: rgba(36, 36, 68, 1);
     box-sizing: border-box;
 
@@ -113,7 +117,6 @@ img {
 }
 
 .nav-link {
-    /* color: rgba(20, 30, 58, 1); */
     color: rgba(255, 255, 255, 1);
     font-weight: 300;
     font-size: 0.9em;
@@ -143,7 +146,6 @@ img {
 }
 
 .fa-bars {
-    /* color: rgba(255, 0, 60, 1); */
     color: rgba(236, 84, 108, 1)
 }
 
@@ -151,11 +153,11 @@ img {
     padding: 0.8em;
 }
 
+
 /*=============================
         SECTION HOME
 =============================*/
 .container-home {
-    /* background-color: rgba(196, 236, 252, 1); */
     background-color: rgba(36, 36, 68, 1);
     padding-top: 7%;
     margin-bottom: -5%;
@@ -165,7 +167,6 @@ img {
 
 .div-center {
     text-align: center;
-    /* color: rgba(52, 58, 64, 1); */
     color: rgba(255, 255, 255, 1);
     padding: 0.5%;
 }
@@ -187,7 +188,6 @@ img {
 }
 
 .btn-demo {
-    /* background-color: rgba(37, 119, 253, 1) !important; */
     background-color: rgba(236, 84, 108, 1) !important;
     border-radius: 30px !important;
     color: rgba(255, 255, 255, 1) !important;
@@ -238,7 +238,7 @@ img {
     padding: 0.2em;
 }
 
-.plan-sub{
+.plan-sub {
     font-weight: bolder;
 }
 
@@ -252,6 +252,11 @@ img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    transition: all 0.3s ease-in-out 0s !important;
+}
+
+.plan-responsive:hover {
+    transform: scale(1.1);
 }
 
 .title-circle {
@@ -263,8 +268,12 @@ img {
     color: rgba(107, 193, 80, 1);
 }
 
-.img-plan{
+.img-plan {
     width: 40% !important;
+}
+
+.produccion {
+    color: rgba(236, 84, 108, 1);
 }
 
 /*=============================
@@ -327,7 +336,7 @@ img {
 ===============================*/
 .container-modulos {
     /* background-color: rgba(196, 236, 252, 1); */
-    padding:2em;
+    padding: 2em;
     background-color: rgba(36, 36, 68, 1);
 
 }
@@ -373,7 +382,7 @@ p i {
 /*============================================
         SECTION FACTURACIÓN ELECTRÓNICA
 =============================================*/
-.container-efac{
+.container-efac {
     margin-bottom: -5% !important;
 }
 
@@ -500,7 +509,11 @@ p i {
 =========================================*/
 
 .container-linea {
-    padding-bottom: 5%  !important;
+    padding-bottom: 5% !important;
+}
+
+.swiper-linea-mobile {
+    display: none;
 }
 
 .title-linea {
@@ -795,12 +808,12 @@ p i {
         padding: 0 5%;
     }
 
-    .img-plan {
-        width: 25%;
-    }
-
     .planes-title {
         font-size: 2.2em;
+    }
+
+    .img-plan {
+        width: 30% !important;
     }
 
     .promo-title,
@@ -817,7 +830,7 @@ p i {
         margin: 3em !important;
     }
 
-    .content-logo{
+    .content-logo {
         padding: 2em 7em !important;
     }
 
@@ -884,12 +897,12 @@ p i {
         padding: 2em;
     }
 
-    .img-plan {
-        width: 30%;
-    }
-
     .planes-title {
         font-size: 2em;
+    }
+
+    .img-plan {
+        width: 30% !important;
     }
 
     .promo-title,
@@ -922,7 +935,7 @@ p i {
         margin: 2% 0;
     }
 
-    .content-logo{
+    .content-logo {
         padding: 2em !important;
     }
 
@@ -953,7 +966,7 @@ p i {
         Media 575px
 ===============================*/
 @media (max-width: 575.98px) {
-/* 
+    /* 
     :target {
         scroll-margin-top: 7rem;
     } */
@@ -1066,14 +1079,18 @@ p i {
         font-size: 1em;
         padding: 0.5em;
     }
-    .container-ex, .container-linea{
+
+    .container-ex,
+    .container-linea {
         margin-top: 4em !important;
     }
+
     .row-linea {
-        display: grid !important;
+        /* display: grid !important;
         grid-template-columns: repeat(2, 1fr) !important;
         grid-template-rows: repeat(2, 1fr) !important;
-        margin: 0 5% !important;
+        margin: 0 5% !important; */
+        display: none !important;
     }
 
     .img-prod {
@@ -1086,9 +1103,14 @@ p i {
 
     .swiper-premium-mobile,
     .swiper-full-mobile,
-    .swiper-cloud-mobile {
+    .swiper-cloud-mobile,
+    .swiper-linea-mobile {
         display: flex;
         justify-content: center;
+    }
+
+    .swiper-linea-mobile {
+        background-color: rgba(245, 169, 44, 1) !important;
     }
 
     .swiper-premium,

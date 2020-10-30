@@ -17,7 +17,7 @@ const swiper = new Swiper('.swiper-cliente', {
   });
 
 
-  var swiperPremium = new Swiper('.swiper-premium-mobile', {
+  const swiperPremium = new Swiper('.swiper-premium-mobile', {
     effect:'coverflow',
     speed:400,
     loop:true,
@@ -31,7 +31,7 @@ const swiper = new Swiper('.swiper-cliente', {
     },
   });
 
-  var swiperFull = new Swiper('.swiper-full-mobile', {
+  const swiperFull = new Swiper('.swiper-full-mobile', {
     effect:'coverflow',
     speed:400,
     loop:true,
@@ -45,7 +45,7 @@ const swiper = new Swiper('.swiper-cliente', {
     },
   });
 
-  var swiperCloud = new Swiper('.swiper-cloud-mobile', {
+  const swiperCloud = new Swiper('.swiper-cloud-mobile', {
     effect:'coverflow',
     speed:500,
     loop:true,
@@ -59,7 +59,7 @@ const swiper = new Swiper('.swiper-cliente', {
     },
   });
 
-  var swiperModulo = new Swiper('.swiper-modulo-mobile', {
+  const swiperModulo = new Swiper('.swiper-modulo-mobile', {
     effect:'coverflow',
     speed:400,
     loop:true,
@@ -72,3 +72,18 @@ const swiper = new Swiper('.swiper-cliente', {
       prevEl: '.swiper-button-prev',
     },
   });
+
+  const swiperLinea = new Swiper('.swiper-linea-mobile', {
+    effect:'coverflow',
+    speed:500,
+    loop:true,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+
