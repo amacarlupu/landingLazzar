@@ -4,11 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lazzar Solutions Now Cloud</title>
+  <title>Lazzar Solutions</title>
   <meta name="description" content="Encuentre el mejor software ERP dólar por dólar para su organización.">
   <meta name="keywords" content="ERP Software Solutions, Enterprise resource plannning">
   <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-  <link rel="icon" type="image/x-icon" href="./Content/images/favicon.ico">
+  <link rel="icon" type="image/x-icon" href="./Content/images/Lazzarfavicon.ico">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
@@ -17,6 +17,8 @@
   <script src="https://kit.fontawesome.com/fa47aaf5dc.js" crossorigin="anonymous"></script>
   <link href="./Content/css/nowcloud.css" rel="stylesheet" type="text/css">
   <script src="https://cdn.jsdelivr.net/npm/joshjs@1.0.0/dist/josh.min.js" crossorigin="anonymous"></script>
+  <script src="./Content/js/gb4script.js"></script>
+  <script src="./Content/js/enviar.js"></script>
 </head>
 
 
@@ -25,7 +27,7 @@
   <a id="bg-head"></a>
 
   <!-- NAVAR -->
-  <nav class="bg-navbar sticky-top navbar navbar-expand-lg p-xl-4 p-lg-4">
+  <nav class="bg-navbar sticky-top navbar navbar-expand-lg p-xl-3 p-lg-4">
     <a class="navbar-brand" href="index.html">
       <img src="./Content/images/logo-now.gif">
     </a>
@@ -33,36 +35,35 @@
       aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span><i class="fas fa-bars"></i></span>
     </button>
-    <div class="collapse navbar-collapse navbar-ex1-collapse" id="navbarNav">
-      <ul class="navbar-nav">
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mr-auto">
 
         <li class="nav-item">
-          <a class="nav-link" href="#section-planes">Planes</a>
+          <a class="nav-link optNav" href="#section-planes">Planes</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#section-modulos">Módulos</a>
+          <a class="nav-link optNav" href="#section-modulos">Módulos</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#section-facturacion">Facturación Electrónica</a>
+          <a class="nav-link optNav" href="#section-facturacion">Facturación Electrónica</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link now" href="#section-now">Exclusivo NOW</a>
+          <a class="nav-link optNav now" href="#section-now">Exclusivo NOW</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#section-lineas">Líneas</a>
+          <a class="nav-link optNav" href="#section-lineas">Líneas</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#section-contacto">Contáctenos</a>
+          <a class="nav-link optNav" href="#formconta">Contáctenos</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
             aria-haspopup="true" aria-expanded="false" href="#">Más</a>
           <div class=" dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="./empresa.html" target="blank">Empresa</a>
-            <a class="dropdown-item" href="./productos.html" target="blank">Productos</a>
-            <a class="dropdown-item" href="./soporte.htlm" target="blank">Soporte</a>
-            <a class="dropdown-item" href="./modulos.html" target="blank">Módulos</a>
-            <a class="dropdown-item" href="./contacto.html" target="blank">Contacto</a>
+            <a class="dropdown-item" href="./empresa.html" target="_blank">Empresa</a>
+            <a class="dropdown-item" href="./productos.html" target="_blank">Productos</a>
+            <a class="dropdown-item" href="./soporte.html" target="_blank">Soporte</a>
+            <a class="dropdown-item" href="./modulos.html" target="_blank">Módulos</a>
           </div>
         </li>
       </ul>
@@ -89,7 +90,7 @@
           </span>
         </div>
         <div class="div-center solicitar-demo-home ">
-          <a href="./contacto.html" target="blank" class="btn btn-demo">SOLICITAR DEMO</a>
+          <a href="#formconta" class="btn btn-demo">SOLICITAR DEMO</a>
         </div>
       </div>
 
@@ -227,7 +228,7 @@
         Diseñado para facilitar el manejo de todos los recursos de tu empresa.
       </div>
       <div class="promo-contac">
-        <a type="button" class="btn btn-promo" href="./contacto.html" target="blank">CONTÁCTANOS</a>
+        <a type="button" class="btn btn-promo" href="./contacto.html" target="_blank">CONTÁCTANOS</a>
       </div>
     </div>
 
@@ -1060,7 +1061,7 @@
         <span>Se adapta a la medida que cambian sus necesidades</span>
       </div>
       <div class="box-carac col-xl-3 col-lg-3 col-md-5 col-sm-5">
-        <p><i class="fas fa-info-circle"></i></p>
+        <p><i class="fas fa-clipboard"></i></p>
         <span>Consulte las modalidades</span>
       </div>
       <div class="box-carac col-xl-3 col-lg-3 col-md-5 col-sm-5">
@@ -1098,7 +1099,7 @@
           <span>Se adapta a la medida que cambian sus necesidades</span>
         </div>
         <div class="swiper-slide swiper-full">
-          <p class="swiper-carac"><i class="fas fa-info-circle"></i></p>
+          <p class="swiper-carac"><i class="fas fa-clipboard"></i></p>
           <span>Consulte las modalidades</span>
         </div>
         <div class="swiper-slide swiper-full">
@@ -1218,6 +1219,60 @@
   <!-- FIN SECTION OPINIONES CLIENTES -->
 
 
+  <!-- INICIO SECTION CONTACTO FORMULARIO -->
+  <div class="container-contacto" id="formconta">
+
+    <div class="formconta-title">
+        CONTÁCTENOS
+    </div>
+
+    <form method="post">
+
+      <div class="body-formconta">
+        <div class="form-group">
+          <label for="name">Nombre</label>
+          <input type="text" class="form-control" id="name" required maxlength="100">
+        </div>
+
+        <div class="form-group">
+          <label for="company">Empresa</label>
+          <input type="text" class="form-control" id="company" required maxlength="100">
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" class="form-control" id="email" required maxlength="150">
+        </div>
+
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="city">Ciudad</label>
+            <input type="text" class="form-control" id="city" required maxlength="100">
+          </div>
+
+          <div class="form-group col-md-6">
+            <label for="phone">Teléfono</label>
+            <input type="text" class="form-control" id="phone" required maxlength="100">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="coment">Comentario</label>
+          <textarea class="form-control" id="coment" rows="3" maxlength="250"></textarea>
+        </div>
+
+        <input type="submit" id="benviar" value="Enviar" title="Contactar con Lazzar" 
+        class="bottomAnima btn btn-enviar"/>
+
+      </div>
+
+      <div class="err" id="add_err"></div>
+
+
+    </form>
+  </div>
+  <!-- FIN SECTION CONTACTO FORMAULARIO -->
+
   <!-- Boton top -->
   <a href="#bg-head" class="btn-top">
     <i class="fas fa-arrow-circle-up"></i>
@@ -1238,11 +1293,23 @@
   <script src="./Content/js/clientes.js"></script>
   <script src="./Content/js/btn-top.js"></script>
   <script src="./Content/js/scrollViewport.js"></script>
+  <script src="./Content/js/nav-sticky.js"></script>
 
 </body>
 
 
-<!-- INICIO FOOTER CONTACTO -->
+<script>
+  $('.navbar-nav>li>.optNav').on('click', function () {
+    $('.navbar-collapse').collapse('hide');
+  });
+
+  $('.navbar-nav>li>div>a').on('click', function () {
+    $('.navbar-collapse').collapse('hide');
+  });
+</script>
+
+
+<!-- INICIO FOOTER REDES -->
 <footer class="container-fluid container-contacto" id="section-contacto">
 
   <div class="container-contact-sup row">
@@ -1294,13 +1361,13 @@
 
     <div class="box-footer col-xl-3 col-lg-4 col-md-12 col-sm-12">
       <ul class="row redes-sociales">
-        <a class="col-4" href="https://www.facebook.com/lazzarsolutions/" target="blank">
+        <a class="col-4" href="https://www.facebook.com/lazzarsolutions/" target="_blank">
           <li><i class="fab fa-facebook"></i></li>
         </a>
-        <a class="col-4" href="https://www.youtube.com/watch?v=pTXbaNNvuJI" target="blank">
+        <a class="col-4" href="https://www.youtube.com/watch?v=pTXbaNNvuJI" target="_blank">
           <li><i class="fab fa-youtube"></i></li>
         </a>
-        <a class="col-4" href="https://lzzsol.com/" target="blank">
+        <a class="col-4" href="https://lzzsol.com/" target="_blank">
           <li><i class="fas fa-globe-americas"></i></li>
         </a>
       </ul>
@@ -1308,6 +1375,6 @@
 
   </div>
 </footer>
-<!-- FIN FOOTER CONTACTO -->
+<!-- FIN FOOTER REDES -->
 
 </html>
