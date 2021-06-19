@@ -3,7 +3,7 @@
 ========================*/
 
 html {
-    scroll-behavior: smooth;
+    scroll-behavior: smooth !important;
 }
 
 :target {
@@ -79,6 +79,8 @@ img {
     color: rgba(20, 30, 58, 1);
     ;
 }
+
+
 
 /*==========================
         BOTON RETORNAR
@@ -670,6 +672,31 @@ p i {
     font-size: 1.5em;
 }
 
+/*======================================
+        SECTION CONTACTO FORMULARIO
+=======================================*/
+
+.formconta-title {
+    font-size: 2em;
+    font-weight: bold;
+    color: rgba(255,255,255,1);
+    text-align: center;
+    padding: 2% 0;
+}
+
+.btn-enviar {
+    background-color: rgba(236, 84, 108, 1) !important;
+    border-radius: 5px !important;
+    color: rgba(255, 255, 255, 1) !important;
+    padding: 0.5em 1.5em !important;
+    font-weight: 600 !important;
+    transition: all 0.3s ease-in-out 0s !important;
+}
+
+.btn-enviar:hover {
+    background-color: rgba(220, 53, 69, 1) !important;
+}
+
 
 /*==============================
         SECTION CONTACTO
@@ -754,6 +781,9 @@ p i {
 
     .img-plan {
         width: 50%;
+    }
+    #formconta{
+        padding: 0 10%;
     }
 }
 
@@ -851,6 +881,10 @@ p i {
         margin-top: 1.7em;
     }
 
+    :target {
+        scroll-margin-top: 23rem;
+    }
+
 }
 
 
@@ -940,7 +974,7 @@ p i {
     }
 
     .row-linea {
-        margin: 0 12% !important;
+        margin: 0 5% !important;
     }
 
     .comodin-box {
@@ -955,10 +989,14 @@ p i {
         margin-top: 1.5em;
     }
 
-    .parallax,
-    .parallaxCarac {
-        display: none;
+    footer{
+        padding-top: 3em !important;
     }
+    
+    :target {
+        scroll-margin-top: 23rem;
+    }
+
 }
 
 
@@ -985,7 +1023,7 @@ p i {
 
     #navbarNav {
         background-color: rgba(255, 255, 255, 1);
-        padding: 1em;
+        padding: 0 1em;
     }
 
     .nav-link {
@@ -1086,10 +1124,6 @@ p i {
     }
 
     .row-linea {
-        /* display: grid !important;
-        grid-template-columns: repeat(2, 1fr) !important;
-        grid-template-rows: repeat(2, 1fr) !important;
-        margin: 0 5% !important; */
         display: none !important;
     }
 
@@ -1151,10 +1185,17 @@ p i {
         margin: 0%;
     }
 
+    footer{
+        padding-top: 3em !important;
+    }
+
     .container-contact-inf {
         margin: 2% 5%;
         padding: 0;
     }
 
-
+    :target {
+        scroll-margin-top: 20rem;
+    }
+    
 }
